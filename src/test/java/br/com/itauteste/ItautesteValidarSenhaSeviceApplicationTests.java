@@ -1,4 +1,4 @@
-package br.com.itauteste.itautestevalidarsenhasevice;
+package br.com.itauteste;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
