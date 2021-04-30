@@ -2,7 +2,6 @@ package br.com.itauteste.controller;
 
 import br.com.itauteste.models.Senha;
 import io.swagger.annotations.*;
-import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +20,7 @@ public class SenhaController {
     public Boolean verificaValidadeSenha(@ApiParam(value = "Senha", required = true) @Validated @RequestBody Senha senha){
 
 
-        return null;
+        return true;
     }
 
 
