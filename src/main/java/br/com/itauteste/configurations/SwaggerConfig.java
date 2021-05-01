@@ -1,4 +1,4 @@
-package br.com.itauteste.configuration;
+package br.com.itauteste.configurations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
