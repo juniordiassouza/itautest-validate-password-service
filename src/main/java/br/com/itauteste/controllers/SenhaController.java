@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class SenhaController implements RestApiController{
 
     @Autowired
-    private static ValidarSenhaService validarSenhaService;
+    private ValidarSenhaService validarSenhaService;
 
     @ApiOperation(value = "Metodo responsavel por verificar se uma senha está no padrão exigido", nickname = "validarSenha", notes="Senha Para ser validadada", tags = { })
     @ApiResponses(value = {
