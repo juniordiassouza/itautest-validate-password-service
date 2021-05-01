@@ -1,4 +1,4 @@
-package br.com.itauteste.controllers;
+package br.com.itautest.controllers;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

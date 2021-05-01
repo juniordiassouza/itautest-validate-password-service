@@ -8,10 +8,10 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.itauteste</groupId>
-	<artifactId>itauteste-validar-senha-service</artifactId>
+	<groupId>br.com.itautest</groupId>
+	<artifactId>itautest-validate-password-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>itauteste-validar-senha-service</name>
+	<name>itautest-validate-password-service</name>
 	<description>teste de capacidade</description>
 	<properties>
 		<java.version>16</java.version>

@@ -1,13 +1,13 @@
-package br.com.itauteste;
+package br.com.itautest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ItautesteValidarSenhaServiceApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ItautesteValidarSenhaServiceApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

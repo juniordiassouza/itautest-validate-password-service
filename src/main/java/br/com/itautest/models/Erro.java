@@ -1,4 +1,4 @@
-package br.com.itauteste.models;
+package br.com.itautest.models;
 
 import lombok.Getter;
 import lombok.Setter;
