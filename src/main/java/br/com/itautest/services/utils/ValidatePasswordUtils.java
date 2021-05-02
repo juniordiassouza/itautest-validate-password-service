@@ -1,4 +1,4 @@
-package br.com.itautest.utils;
+package br.com.itautest.services.utils;
 
 import org.springframework.stereotype.Service;
 

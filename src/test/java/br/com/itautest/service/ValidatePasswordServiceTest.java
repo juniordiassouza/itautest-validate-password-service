@@ -1,9 +1,9 @@
-package br.com.itautest.controllers;
+package br.com.itautest.service;
 
 
 import br.com.itautest.models.Password;
 import br.com.itautest.services.ValidatePasswordService;
-import br.com.itautest.utils.ValidatePasswordUtils;
+import br.com.itautest.services.utils.ValidatePasswordUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

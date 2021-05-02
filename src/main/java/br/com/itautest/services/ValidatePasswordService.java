@@ -3,7 +3,7 @@ package br.com.itautest.services;
 import br.com.itautest.exceptions.ValidateException;
 import br.com.itautest.exceptions.MessageExceptionEnum;
 import br.com.itautest.models.Password;
-import br.com.itautest.utils.ValidatePasswordUtils;
+import br.com.itautest.services.utils.ValidatePasswordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
