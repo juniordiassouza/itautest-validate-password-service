@@ -15,9 +15,6 @@ public class ValidatePasswordUtils {
     private static String AT_LEAST_ONE_LOWER_LETTER = "^(?=.*[a-z]).*$";
     private static String AT_LEAST_ONE_SPECIAL_CHARACTER = "^(?=.*?[#?!@$%^&*-]).*$";
 
-    private ValidatePasswordUtils(){
-    }
-
     public Boolean isValid(String password){
 
         List<String> expressions = new ArrayList<>();
@@ -32,12 +29,12 @@ public class ValidatePasswordUtils {
 
     }
 
-    public Boolean isValidatePasswordRegularExpression(List<String> expressions, String password){
+    private Boolean isValidatePasswordRegularExpression(List<String> expressions, String password){
 
         return (!expressions.stream().anyMatch(e -> !Pattern.compile(e).matcher(password).matches()));
     }
 
-    public Boolean isRepeatedCharacter(String password){
+    private Boolean isRepeatedCharacter(String password){
 
         return !(password.toLowerCase().length()
                 != password.toLowerCase().chars().distinct().count());
