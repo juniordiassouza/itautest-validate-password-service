@@ -4,10 +4,14 @@ import br.com.itautest.exceptions.ValidateException;
 import br.com.itautest.exceptions.MessageExceptionEnum;
 import br.com.itautest.models.Password;
 import br.com.itautest.utils.ValidatePasswordUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ValidatePasswordService {
+
+    @Autowired
+    private ValidatePasswordUtils utils;
 
     public Boolean validate(Password password) {
 
@@ -15,7 +19,7 @@ public class ValidatePasswordService {
 
         try {
 
-            result = ValidatePasswordUtils.isValid(password.getPassword());
+            result = utils.isValid(password.getPassword());
 
         }catch (Exception e){
 

@@ -1,9 +1,12 @@
 package br.com.itautest.utils;
 
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
+@Service
 public class ValidatePasswordUtils {
 
     private static String NINE_OR_MORE_CHARACTERS = "[A-Za-z\\d@$!%*#&^()-+]{9,}$";
@@ -15,7 +18,7 @@ public class ValidatePasswordUtils {
     private ValidatePasswordUtils(){
     }
 
-    public static boolean isValid(String password){
+    public Boolean isValid(String password){
 
         List<String> expressions = new ArrayList<>();
         expressions.add(NINE_OR_MORE_CHARACTERS);
@@ -29,12 +32,12 @@ public class ValidatePasswordUtils {
 
     }
 
-    public static boolean isValidatePasswordRegularExpression(List<String> expressions, String password){
+    public Boolean isValidatePasswordRegularExpression(List<String> expressions, String password){
 
         return (!expressions.stream().anyMatch(e -> !Pattern.compile(e).matcher(password).matches()));
     }
 
-    public static boolean isRepeatedCharacter(String password){
+    public Boolean isRepeatedCharacter(String password){
 
         return !(password.toLowerCase().length()
                 != password.toLowerCase().chars().distinct().count());
