@@ -8,6 +8,7 @@ class ItautesteValidarPasswordSeviceApplicationTests {
 
 	@Test
 	void contextLoads() {
+		new Application();
 	}
 
 }
