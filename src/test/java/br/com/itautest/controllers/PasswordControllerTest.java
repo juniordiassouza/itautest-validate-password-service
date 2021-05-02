@@ -36,7 +36,7 @@ public class PasswordControllerTest {
     }
 
     @Test(expected = Exception.class)
-    public void validatePasswordExeption(){
+    public void validatePasswordException(){
 
         passwordController = new PasswordController();
         passwordController.verificaValidadeSenha(null);

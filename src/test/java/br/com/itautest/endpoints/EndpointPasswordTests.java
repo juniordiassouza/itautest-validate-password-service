@@ -1,4 +1,4 @@
-package br.com.itautest.Endpoint;
+package br.com.itautest.endpoints;
 
 import br.com.itautest.models.Password;
 import com.fasterxml.jackson.core.JsonProcessingException;

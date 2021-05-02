@@ -10,7 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.Mockito.times;
@@ -38,7 +37,7 @@ public class ValidatePasswordServiceTest {
     }
 
     @Test(expected = ValidateException.class)
-    public void testPasswordServiceValidadeException(){
+    public void testPasswordServiceValidateException(){
 
         Password password = new Password();
         password.setPassword(null);
