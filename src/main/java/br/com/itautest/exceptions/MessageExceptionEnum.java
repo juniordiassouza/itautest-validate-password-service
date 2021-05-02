@@ -8,12 +8,12 @@ public enum MessageExceptionEnum {
     MSG_ERROR_GENERIC("Request error", 500);
 
     private final String message;
-    private final Integer codigo;
+    private final Integer code;
 
-    MessageExceptionEnum(String message, Integer codigo){
+    MessageExceptionEnum(String message, Integer code){
 
         this.message=message;
-        this.codigo=codigo;
+        this.code = code;
     }
 
 }
