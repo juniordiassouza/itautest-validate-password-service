@@ -1,6 +1,5 @@
 package br.com.itautest.controllers;
 
-import br.com.itautest.exceptions.ValidateException;
 import br.com.itautest.models.Password;
 import br.com.itautest.services.ValidatePasswordService;
 import org.junit.Assert;
@@ -8,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,14 +24,46 @@ public class PasswordControllerTest {
     private PasswordController passwordController;
 
     @Test
-    public void validatePassword(){
+    public void validatePasswordOK(){
 
         Password password = new Password();
-        password.setPassword("fdf");
+        password.setPassword("");
 
         ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
         verify(validatePasswordService,times(1)).validate(password);
 
         Assert.assertEquals(result.getStatusCode(), HttpStatus.OK);
+    }
+
+    @Test(expected = Exception.class)
+    public void validatePasswordExeption(){
+
+        passwordController = new PasswordController();
+        passwordController.verificaValidadeSenha(null);
+
+    }
+
+    @Test
+    public void validatePasswordFalse(){
+
+        Password password = new Password();
+        password.setPassword("");
+
+        Mockito.when(validatePasswordService.validate(Mockito.any())).thenReturn(false);
+        ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
+
+        Assert.assertEquals(result.getBody(), false);
+    }
+
+    @Test
+    public void validatePasswordTrue(){
+
+        Password password = new Password();
+        password.setPassword("");
+
+        Mockito.when(validatePasswordService.validate(Mockito.any())).thenReturn(true);
+        ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
+
+        Assert.assertEquals(result.getBody(), true);
     }
 }
