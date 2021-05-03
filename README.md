@@ -10,7 +10,7 @@ Outros dois serviços são responsáveis pelo processamento de e-mails:
 
 |  |  |
 | ------ | ------ |
-| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/tree/master/src/main/resources/images/openapi.png" width="32" height="32"> | [swagger](http://localhost:8080/api/validador/v1/swagger-ui/index.html) <br> [collection](http://localhost:8080/api/validador/v1/swagger-ui/index.html) |
+| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/openapi%20.png" width="32" height="32"> | [swagger](http://localhost:8080/api/validador/v1/swagger-ui/index.html) <br> [collection](http://localhost:8080/api/validador/v1/swagger-ui/index.html) |
 
 ## Como rodar local
 
