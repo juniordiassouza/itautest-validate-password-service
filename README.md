@@ -1,4 +1,4 @@
-# comunicador-email &nbsp; v3
+# VAlidados de Senha &nbsp; v3
 
 Serviço componente do [comunicador](http://localhost:8080/api/validador/v1/swagger-ui/index.html) responsável pelo processamento de templates de e-mail.
 
