@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class EndpointPasswordTests {
 
-    final String BASE_PATH = "http://localhost:8080/api/validador/v1/password";
+    final String BASE_PATH = "http://localhost:8080/api/validator/v1/password";
 
     private RestTemplate restTemplate;
 
