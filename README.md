@@ -1,4 +1,4 @@
-# Validador de senha de Senha &nbsp; v1
+# Validador de senha &nbsp; v1
 
 Serviço responsável por [validar uma senha](http://localhost:8080/api/validator/v1/password).
 
