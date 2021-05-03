@@ -6,7 +6,7 @@ Serviço responsável por [validar uma senha](http://localhost:8080/api/validato
 
 |  |  |
 | ------ | ------ |
-| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/openapi%20.png" width="32" height="32"> | [swagger](http://localhost:8080/api/validador/v1/swagger-ui/index.html) <br> [collection](http://localhost:8080/api/validator/v1/v2/api-docs) |
+| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/openapi%20.png" width="32" height="32"> | [swagger](http://localhost:8080/api/validator/v1/swagger-ui/index.html) <br> [collection](http://localhost:8080/api/validator/v1/v2/api-docs) |
 
 ## Como rodar local
 
