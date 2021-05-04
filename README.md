@@ -26,7 +26,7 @@ Para startar clique em "Run Application" ou "Debug".
 
 Disposição de diretórios: respeitando a estrutura do projeto Spring Boot.
 
-Função: Utilizamos Regex para validação de cada um dos padrões de senha exigidos na descrição do projeto e também uma função do JAVA (stream) que é responsável por passar por todas validações Regex, verificando todas as premissas de validação da senha.  
+Função: (br.com.itautest.services.utils) Utilizamos Regex para validação de cada um dos padrões de senha exigidos na descrição do projeto e também uma função do JAVA (stream) que é responsável por passar por todas validações Regex, verificando todas as premissas de validação da senha.  
 No caso da validação de caracteres repetidos, utilizamos uma função do próprio JAVA para tratamento de Strings.
 
 # Desenho
