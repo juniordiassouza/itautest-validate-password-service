@@ -22,6 +22,8 @@ Para startar clique em "Run Application" ou "Debug".
 
 <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/tela.png">
 
+Para testes starte a aplicação e utilize links úteis (Swagger) disposto neste documento.
+
 ## Projeto
 
 Disposição de diretórios: respeitando a estrutura do projeto Spring Boot.
