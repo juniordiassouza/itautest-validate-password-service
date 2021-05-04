@@ -31,7 +31,7 @@ Disposição de diretórios: respeitando a estrutura do projeto Spring Boot.
 Função: (br.com.itautest.services.utils.ValidatePasswordUtils) Utilizamos Regex para validação de cada um dos padrões de senha exigidos na descrição do projeto e também uma função do JAVA (stream) que é responsável por passar por todas validações Regex, verificando todas as premissas de validação da senha.  
 No caso da validação de caracteres repetidos, utilizamos uma função do próprio JAVA para tratamento de Strings.
 
-Testes: Conforme determinado na especificação do projeto(MockitoJUnitRunner), foram testadas todas as classes e também o projeto como um todo (SpringRunner).
+Testes: Conforme determinado na especificação do projeto, foram testadas todas as classes(MockitoJUnitRunner) e também o projeto como um todo(SpringRunner).
 
 # Diagrama
 
