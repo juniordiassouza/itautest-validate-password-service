@@ -23,7 +23,7 @@ public class PasswordController implements RestApiController{
     @ApiResponse(code= 500, message = "Internal error")
     })
     @RequestMapping(value="/password", produces = {"application/json"}, method = RequestMethod.POST)
-    public ResponseEntity<Boolean> verificaValidadeSenha(@ApiParam(value = "Password", required = true) @Validated @RequestBody Password password){
+    public ResponseEntity<Boolean> checkPasswordValidity(@ApiParam(value = "Password", required = true) @Validated @RequestBody Password password){
 
         return returnOk(this.validadePasswordService.validate(password));
     }

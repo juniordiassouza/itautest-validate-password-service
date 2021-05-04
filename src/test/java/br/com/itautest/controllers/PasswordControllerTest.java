@@ -29,7 +29,7 @@ public class PasswordControllerTest {
         Password password = new Password();
         password.setPassword("");
 
-        ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
+        ResponseEntity<Boolean> result = passwordController.checkPasswordValidity(password);
         verify(validatePasswordService,times(1)).validate(password);
 
         Assert.assertEquals(result.getStatusCode(), HttpStatus.OK);
@@ -39,7 +39,7 @@ public class PasswordControllerTest {
     public void validatePasswordException(){
 
         passwordController = new PasswordController();
-        passwordController.verificaValidadeSenha(null);
+        passwordController.checkPasswordValidity(null);
 
     }
 
@@ -50,7 +50,7 @@ public class PasswordControllerTest {
         password.setPassword("");
 
         Mockito.when(validatePasswordService.validate(Mockito.any())).thenReturn(false);
-        ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
+        ResponseEntity<Boolean> result = passwordController.checkPasswordValidity(password);
 
         Assert.assertEquals(result.getBody(), false);
     }
@@ -62,7 +62,7 @@ public class PasswordControllerTest {
         password.setPassword("");
 
         Mockito.when(validatePasswordService.validate(Mockito.any())).thenReturn(true);
-        ResponseEntity<Boolean> result = passwordController.verificaValidadeSenha(password);
+        ResponseEntity<Boolean> result = passwordController.checkPasswordValidity(password);
 
         Assert.assertEquals(result.getBody(), true);
     }
