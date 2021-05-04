@@ -2,6 +2,10 @@
 
 Serviço responsável por [validar uma senha](http://localhost:8080/api/validator/v1/password).
 
+## Tecnologia
+
+API Rest com framework Spring Boot/JAVA
+
 ## Links úteis
 
 |  |  |
