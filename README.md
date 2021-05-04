@@ -18,6 +18,10 @@ Clone o projeto utilizando uma plataforma de desenvolvimento (IDE), como por exe
 
 Link Clone: https://github.com/juniordiassouza/itautest-validate-password-service.git
 
+Para startar clique em "Run Application" ou "Debug".
+
+| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/tela.png" 
+
 # Desenho
 
 <img src="">
