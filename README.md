@@ -20,7 +20,7 @@ Link Clone: https://github.com/juniordiassouza/itautest-validate-password-servic
 
 Para startar clique em "Run Application" ou "Debug".
 
-| <img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/tela.png">
+<img src="https://github.com/juniordiassouza/itautest-validate-password-service/blob/master/src/main/resources/images/tela.png">
 
 # Desenho
 
